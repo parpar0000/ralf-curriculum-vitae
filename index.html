@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="XU-A-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ralfDev Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- cdnJS.com -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div id="menu-bars" class="fas fa-bars">
+    </div>
+    <nav class="navbar">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+
+  <section class="home" id="home">
+    <div class="content">
+      <img src="images/home-pic1.jpg" alt="Ralf Picture">
+      <h3>Ralf Diez <span>Duhaylungsod</span></h3>
+      <p>I am a Full Stack Web Developer</p> 
+    </div>
+  </section>
+
+  <script>
+    let menu = document.querySelector('#menu-bars');
+    let header = document.querySelector('header');
+
+
+    menu.onclick = () => {
+      menu.classList.toggle('fa-times');
+      header.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
