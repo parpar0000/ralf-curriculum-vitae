@@ -15,7 +15,7 @@
   --bg-light-color: #303036;
   --text-color: #f9f9f9;
   --para-color: #9c9c9c;
-  --main-color: #4387ee; /***#8f43ee**/
+  --main-color: #d4af37; /***#8f43ee**/ /***#d4af37**#4387ee*/
   --light-color: #74a5f0; /***#b37df5**/
   --extra-light: #9bc3ff; /***#cea5ff**/
   --white-text: #ffff;
@@ -32,7 +32,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: #ffff;
+  background: #eee;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -40,7 +40,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: #eeee;
+  background: #f5f5f5ee;
   padding-right: 5rem;
 }
 
@@ -77,6 +77,7 @@ header .navbar a:hover {
 
 section {
   padding: 2rem 9%;
+  min-height: 100vh;
 
 }
 
@@ -113,10 +114,43 @@ section {
   color: var(--main-color);
 }
 
+.home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .home .content p {
   color: #222;
   font-size: 2rem;
   line-height: 2;
+}
+
+.home .content .btn {
+  background-color: var(--bg-light-color);
+  color: var(--white-text);
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  line-height: 2;
+}
+
+.home .content .btn:hover {
+  background-color: var(--main-color);
+  letter-spacing: .1rem;
 }
 
 #menu-bars {
