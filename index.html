@@ -13,14 +13,15 @@
 
 <body>
   <header>
-    <div id="menu-bars" class="fas fa-bars">
+    <div id="menu-bars" class="fas fa-bars"></div>
     </div>
     <nav class="navbar">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Service</a>
-        <a href="">Blog</a>
-        <a href="">Contact</a>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blogs">Blog</a>
+        <a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -62,7 +63,7 @@
             <h3><span> Year's Experience : </span> 10 years</h3>
             <h3><span> Address : </span> Dubai, UAE</h3>
             <h3><span> Contact Number : </span> +63 917 123 4567</h3>
-            <h3><span> Email Address : </span> ralfdev@me.io</h3>
+            <h3><span> Email Address : </span> info@ralfdev.com</h3>
           </div>
         </div>
             <a href="" class="btn">Download CV</a>
@@ -180,7 +181,7 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
               sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor,
               quibusdam!</p>
-              <a href="#" class="btn">learn more</a>
+              <div class="btn"><a href="#" class="btn">learn more</a></div>
           </div>
 
           <div class="box">
@@ -189,7 +190,7 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
               sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor,
               quibusdam!</p>
-              <a href="#" class="btn">learn more</a>
+              <div class="btn"><a href="#" class="btn">learn more</a></div>
           </div>
 
           <div class="box">
@@ -234,7 +235,7 @@
       <div class="footer-row">
           <!-- About Section -->
           <div class="footer-col">
-              <h4>About Us</h4>
+              <h4>Ralf D.</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim, justo eu auctor dapibus, arcu ligula pharetra ex.</p>
           </div>
           
@@ -243,9 +244,10 @@
               <h4>Quick Links</h4>
               <ul>
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#blogs">Blog</a></li>
+                  <li><a href="#contact">Contact</a></li>
               </ul>
           </div>
           
@@ -253,14 +255,14 @@
           <div class="footer-col">
               <h4>Contact Us</h4>
               <ul>
-                  <li><a href="#">Email: info@example.com</a></li>
-                  <li><a href="#">Phone: +123-456-7890</a></li>
-                  <li><a href="#">Location: 123 Street, City</a></li>
+                  <li><a href="#">Email: info@ralfdev.com</a></li>
+                  <li><a href="#">Phone: +63 967 254 5043</a></li>
+                  <li><a href="#">Tangub City, Mis Occ, PH, 7214</a></li>
               </ul>
               <div class="social-links">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
                   <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
               </div>
           </div>
@@ -268,7 +270,7 @@
 
       <!-- Copyright Section -->
       <div class="footer-bottom">
-          <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+          <p>&copy; 2024 Ralf D. All Rights Reserved.</p>
       </div>
   </div>
 </footer>
@@ -295,6 +297,11 @@
     menu.onclick = () => {
       menu.classList.toggle('fa-times');
       header.classList.toggle('active');
+    }
+
+    window.onscroll = () => {
+      menu.classList.remove('fa-times');
+      header.classList.remove('active');
     }
     
     let typed = new Typed('.typing-text',{
