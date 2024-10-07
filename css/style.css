@@ -78,8 +78,10 @@ header .navbar a:hover {
 section {
   padding: 2rem 9%;
   min-height: 100vh;
+  margin: 5rem 0;
 
 }
+
 
 .home {
   display: flex;
@@ -322,7 +324,6 @@ section {
   color: #222;
   text-transform: uppercase;
   padding-bottom: 4rem;
-  margin-top: 5rem;
 }
 
 .portfolio .box-container{
@@ -376,6 +377,7 @@ left:0;
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
+  position: relative;
 }
 
 .blogs .box-container .box{
@@ -403,7 +405,173 @@ left:0;
   color:#666; 
   font-size: 1.5rem; 
   padding:.5rem 0;
+  text-align: left;
 }
+
+
+.blogs .box-container .box a {
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  color:var(--white-text);
+  background-color: var(--main-color);
+  line-height: 1.5;
+}
+
+/* ********Contact Form Section********* */
+
+.contact .row{ 
+  display:flex; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap:1.5rem; 
+} 
+
+.contact .row .image{ 
+  flex:1 1 40rem; 
+} 
+
+.contact .row .image img{ 
+  width: 100%; 
+}
+
+.contact .row form{ 
+  flex:1 1 40rem; 
+  padding:1rem 2rem; 
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
+  border-radius: .5rem; 
+  background:#fff; 
+}
+
+.contact .row form .inputBox{ 
+  display: flex; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+}
+
+.contact .row form .inputBox input, .contact .row form .box, .contact .row form textarea{ 
+  width:100%; 
+  border-radius: .5rem; 
+  font-size: 1.7rem; 
+  color:#333; 
+  padding:1rem; 
+  margin:1rem 0; 
+  border:.1rem solid rgba(0,0,0,.1); 
+  text-transform: none; 
+}
+
+.contact .row form .inputBox input:focus, .contact .row form .box:focus, .contact .row form textarea:focus{
+ border-color: var(--green); 
+}
+
+.contact .row form .inputBox input{ 
+  width:49%; 
+}
+
+.contact .row form textarea{ 
+  height:20rem; 
+  resize: none; 
+}
+
+.contact .row form .btn{
+   margin:.5rem 0; 
+}
+
+.contact .row form .btn {
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  color:var(--white-text);
+  background-color: var(--main-color);
+  line-height: 1.5;
+}
+
+/* *****Footer Section***** */
+
+footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background-color: #e67e22;
+}
+
+.footer-col ul {
+  list-style-type: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #e67e22;
+}
+
+.footer-col p {
+  line-height: 1.6;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #e67e22;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 
 /* mune-bar responsive */
 
