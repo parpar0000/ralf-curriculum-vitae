@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: 'nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+  }
+  
+  :root {
+    --bg-color: #1e1e20;
+    --bg-light-color: #303036;
+    --text-color: #f9f9f9;
+    --para-color: #9c9c9c;
+    --main-color: #d4af37; /***#8f43ee**/ /***#d4af37**#4387ee*/
+    --light-color: #74a5f0; /***#b37df5**/
+    --extra-light: #9bc3ff; /***#cea5ff**/
+    --white-text: #ffff;
+  }
+  
+  html {
+    font-size: 80.2%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar {
+      width: .7rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #eee;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: #eee;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #f5f5f5ee;
+    padding-right: 5rem;
+  }
+
+  header {
+    position: fixed;
+    top: 0; right: 0;
+    min-height: 100vh;
+    display: inline-flex;
+    align-items: center;
+    background: #ffff;
+    z-index: 1000;
+  }
+  
+  header .navbar {
+    writing-mode: vertical-lr;
+    padding: 2rem; 
+  
+  }
+  
+  header .navbar a {
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1rem;
+    color: #222;
+    text-transform: uppercase;
+  
+  }
+  
+  header .navbar a:hover {
+    color: var(--main-color);
+  }
+
+  #menu-bars {
+    position: fixed;
+    z-index: 2001;
+    top: 2rem;
+    left: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: #ffff;
+    background: var(--main-color);
+    cursor: pointer;
+    display: none;
+  }
+  
+
+  /******** mune-bar responsive *********/
+
+@media (max-width:991px) {
+    html {
+      font-size: 55%;
+  
+    }
+  
+    body {
+      padding-right: 0;
+    }
+  
+    header {
+      width: 100%;
+      top: -100%;
+    }
+  
+    header.active {
+      top: -17%;
+      background-color: rgba(255, 255, 255, 0.8);
+  
+    }
+  
+    #menu-bars {
+      display: initial;
+  
+    }
+  
+    header .navbar {
+      writing-mode: horizontal-tb;
+      
+    }
+  
+    header .navbar a {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+  }
+  
+  @media (max-width:450px) {
+    html {
+      font-size: 50%;
+    }
+  
+  
+  }

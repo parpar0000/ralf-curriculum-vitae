@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Latest Update</title>
+    <link rel="stylesheet" href="../../pages/blogs/blog1.css">
+
+  <!-- cdnJS.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        </div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="http://127.0.0.1:5500/index.html#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#blogs">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      
+
+
+      <!-- "Typed.js" 2.0.12 ver, link from CDN.js -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js">
+</script>
+
+<!-- Coding Sript -->
+
+<script>
+  let menu = document.querySelector('#menu-bars');
+  let header = document.querySelector('header');
+
+  menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+  }
+
+  window.onscroll = () => {
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+  }
+  
+</script>
+    
+    
+</body>
+</html>
