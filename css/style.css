@@ -283,7 +283,7 @@ section {
 .services .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap:1.6rem;
 }
 
 .services .info {
@@ -299,6 +299,14 @@ section {
   line-height: 1.5;
   font-weight: 700;
   
+}
+
+.service-item {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid #d4af37; /* Gold color */
 }
 
 .services .box-container .box {
@@ -324,15 +332,82 @@ section {
 
 .services .box-container .box h3{
     color:#222;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-top:1rem;
 }
 
 .services .box-container .box p{
     color:#333;
-    font-size:1.7rem;
+    font-size:1.3rem;
     padding:1rem 0;
     line-height: 2;
+    
+}
+
+
+/* Experience Section */
+
+.experience-section {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px 9%;
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #222;
+  text-transform: capitalize;
+  padding-bottom: 4rem;
+}
+
+.experience-section p {
+  font-size: 1.5rem;
+  color: #333;
+  text-transform: none;
+}
+
+.experience-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 5px solid #d4af37; /* Gold color */
+  border-radius: 8px;
+}
+
+.experience-item h3 {
+  font-size: 1.4rem;
+  color: #d4af37;
+  margin-bottom: 5px;
+}
+
+.experience-item .company {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.experience-item .date {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.experience-item .description {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 15px;
+  }
+  .experience-item {
+    padding: 15px;
+  }
 }
 
 /***** Portfolio Section *****/
