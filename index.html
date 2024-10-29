@@ -79,6 +79,7 @@
     <div class="experience-item">
         <h3>IT Consultant | Document Controller</h3>
         <p class="company">Infracad Engineering Services</p>
+        <p class="address">Address: DIP 1, Dubai, United Arab Emirates</p>
         <p class="date">March 2023 - Present</p>
         <p class="description">As an IT Consultant and Support Specialist, I have been responsible for    establishing and managing Infracad Engineering’s local IT infrastructure. I installed and configured a Windows Server 2022, setting it up as both the domain controller and file server. I ensured that all workstations were securely connected to the server, implementing file-sharing protocols to manage network traffic based on security policies. Additionally, I provide daily and on-call desktop support to our engineering team, ensuring that all workstations are connected to the network, functioning optimally, and have up-to-date engineering software. I also enable seamless collaboration and file synchronization through the local server and cloud storage solutions like Dropbox and OneDrive, allowing our engineers to work efficiently in-office or remotely, with synchronized access to shared resources.
         <br><br>
@@ -88,6 +89,7 @@
     <div class="experience-item">
       <h3>Full-Stack Web Developer</h3>
       <p class="company">Double Helix WD LLC | The Problem Solvers</p>
+      <p class="address">Address: Washington, USA</p>
       <p class="date">Feb 2021 - Present | Project Based</p>
       <p class="description">In this role, I worked as a full-stack web developer, responsible for managing the hosting provider (Cloudways) for all of our clients. I developed WordPress websites as well as static websites using HTML, CSS, and JavaScript. This project-based position required flexibility and technical expertise to meet each client’s unique needs efficiently.</p>
     </div>
@@ -95,29 +97,37 @@
     <div class="experience-item">
       <h3>Full-Stack Web Developer | IT Consultant</h3>
       <p class="company">OBM Distribution, Inc.</p>
+      <p class="address">Address: California, USA</p>
       <p class="date">Sep 2021 - Present | Part-time, 2 hours per day</p>
-      <p class="description">Created user-centered designs and improved the usability of existing applications.</p>
+      <p class="description">In this role, I am responsible for building and managing OBM Distribution's online presence, including website development and maintenance. I also manage both their Shopify and eBay stores, optimizing eBay item descriptions to create a visually appealing, mini-website experience within each listing. I manage emails across multiple providers (GoDaddy, IONOS, Register.com, outlook), ensuring streamlined and secure domain and hosting configurations. My responsibilities span the full website lifecycle from planning to ROI optimization. Additionally, I design UI elements for the website and create social media graphics to strengthen brand visibility.</p>
     </div>
 
     <div class="experience-item">
       <h3>Full-Stack Web Developer | IT Consultant</h3>
       <p class="company">Raza Smoking Tobacco Trading Co. LLC</p>
-      <p class="date">Nov 2020 - Mar 2023</p>
-      <p class="description">Designed visual content for various digital and print campaigns, working closely with marketing teams.</p>
+      <p class="address">Address: Motor City, Dubai, United Arab Emirates</p>
+      <p class="date">Nov 2021 - Mar 2023</p>
+      <p class="description">In this multifaceted role, I was instrumental in establishing Raza Smoking Tobacco Trading Co.'s online presence, turning it into a reliable source of passive income. I led the creation and optimization of the company’s social media, Google My Business, and e-commerce website, which successfully achieved a strong ROI. Additionally, I provided IT support, managed accounts and legal documentation, and contributed to on-site visual merchandising and website production.
+        <br><br>
+        As one of the first employees at this startup, I collaborated closely with the owner, who had been my manager for seven years in a previous company. Recognizing my potential, he brought me on board to help build and grow his business both online and on-site. Through my expertise in web development, SEO, and IT consulting, I played a pivotal role in the company's success from the ground up.</p>
     </div>
 
     <div class="experience-item">
       <h3>Search Engine Optimization Specialist | SEO Intern</h3>
       <p class="company">ANT Digital Solutions Co.</p>
+      <p class="address">Address: Philippines</p>
       <p class="date">May 2019 - October 2020</p>
-      <p class="description">Assisted in web development tasks, learning and improving coding and design skills.</p>
+      <p class="description">In my role as an SEO Specialist intern, I conducted detailed keyword research, optimized site copy for clients, and built brand awareness to drive online growth. Under the mentorship of Coach Angel, the company’s owner, I completed an advanced white hat SEO course and applied my skills hands-on, achieving significant results. I increased daily traffic to client sites from 30,000 to 80,000 and reduced bounce rates from 30% to 12%. I demonstrated the ability to work effectively both independently and in teams, earning recognition as Employee of the Month for my outstanding contributions. Most of the SEO tools I used were Yoast SEO, Rankmath, WordPress plugins, Ahrefs, Semrush, Moz, Google Analytics, and Google Search Console.</p>
     </div>
 
     <div class="experience-item">
       <h3>System Support Specialist and Logistic</h3>
       <p class="company">Fadayee - Abu Mohammed Smoking Accessories LLC</p>
+      <p class="address">Address: Abu Dhabi, United Arab Emirates</p>
       <p class="date">Jan 2016 - October 2021</p>
-      <p class="description">Assisted in web development tasks, learning and improving coding and design skills.</p>
+      <p class="description">This was my first role upon arriving in Dubai, UAE, where I was hired as a System Support Specialist to oversee the newly installed POS system and provide in-house IT support. In addition, I took on responsibilities as a cashier and salesperson. Fadayee specializes in retailing smoking accessories and has established its own brand of tobacco and pipes, including medwakh and dokha, throughout the UAE.
+      <br><br>
+      Over my seven years with the company, I gained extensive experience in customer engagement, product marketing (both in-store and online), and business operations. This role was foundational in developing my IT, marketing, and business management skills, which I continue to apply in my career.</p>
     </div>
   </section>
 
@@ -281,6 +291,9 @@
       </div> 
 </section>
 
+<!-- Back to Top Button -->
+<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑</button>
+
 <!-- Footer Section -->
 
 <footer>
@@ -362,6 +375,24 @@
         loop : true,
       typeSpeed : 150
     })
+
+        // Show or hide the button based on scroll position
+    window.onscroll = function() { scrollFunction(); };
+
+    function scrollFunction() {
+      const button = document.getElementById("backToTopBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.style.display = "block"; // Show button when scrolled down
+      } else {
+        button.style.display = "none"; // Hide button when at the top
+      }
+    }
+
+    // Scroll to the top when button is clicked
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
 
   </script>
 
